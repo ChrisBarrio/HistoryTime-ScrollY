@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet"> 
+    <!-- Style -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/index.css">
+    <!-- Libreria -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<title>History Time Scroll</title>
+</head>
+<body>
+	<div class="hero">
+		<h1>Norte Argentino 2021</h1>
+	</div>
+	<div class="container">
+		<div class="evento">
+			<div class="foto" data-aos="fade-up-right">
+				<img src="./img/vista-molles.jpg" alt="vista-molles">
+			</div>
+			<h3 class="fecha">La vista desde el hostel "Los Molles"</h3>
+		</div>
+		<div class="evento">
+			<div class="foto" data-aos="fade-up-left">
+				<img src="./img/humauaca-escaleras.jpg" alt="humauaca-escaleras">
+			</div>
+			<h3 class="fecha">Escaleras de Humauaca</h3>
+		</div>
+		<div class="evento">
+			<div class="foto" data-aos="fade-down-left">
+				<img src="./img/hornacal.jpg" alt="El Hornacal">
+			</div>
+			<h3 class="fecha">Cerro de 14 colores, "El Hornacal"</h3>
+		</div>
+		<div class="evento">
+			<div class="foto" data-aos="fade-down-right">
+				<img src="./img/salar-anteojos.jpg" alt="salar-anteojos">
+			</div>
+			<h3 class="fecha">El Salar</h3>
+		</div>
+		<div class="evento">
+			<div class="foto" data-aos="flip-up">
+				<img src="./img/4200msnm.jpg" alt="4200msnm">
+			</div>
+			<h3 class="fecha">a 4200 metros sobre el nivel del Mar</h3>
+		</div>
+		<div class="evento">
+			<div class="foto" data-aos="flip-down">
+				<img src="./img/anfiteatro.jpg" alt="anfiteatro">
+			</div>
+			<h3 class="fecha">Anfiteatro, ruta las quebradas de las conchas</h3>
+		</div>
+	</div>
+
+
+	<script>
+		AOS.init({
+			duration: 3000,
+            delay:1000,
+            once:false
+		});
+	</script>
+</body>
+</html>

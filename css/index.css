@@ -1,0 +1,143 @@
+/* ------ Fonts ------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #DCDFD9;
+    font-family: 'Readex Pro', sans-serif;
+	color: #1b3231;
+}
+
+.hero {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 20vh;
+	font-size: 2.25rem;
+	text-transform: uppercase;
+}
+ .hero h1{
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 1.5em;
+	box-shadow: 0 7px 0 5px rgba(240, 167, 10, 0.4);
+ }
+.container {
+	width: 90%;
+	max-width: 75rem;
+	margin: 6.25rem auto;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.container::after {
+	content: "";
+	width: 0.125rem;
+	height: 100%;
+	background: #1b3231;
+	position: absolute;
+	top: 0;
+	left: calc(50% - 1px);
+	z-index: 1;
+}
+
+.evento {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 12.5rem;
+	position: relative;
+}
+
+.evento::after {
+	content: "";
+	display: block;
+	width: 0.875rem;
+	height: 0.875rem;
+	border-radius: 6.25rem;
+	background: #DCDFD9;
+	border: 2px solid #1b3231;
+	position: absolute;
+	z-index: 2;
+	top: calc(50% - 9px);
+	left: calc(50% - 9px);
+}
+
+.fecha {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	width: calc(42% + 20px);
+	font-size: 2em;
+	font-weight: normal;
+}
+
+.foto {
+	width: 42%;
+	border: 0.625rem solid #fff;
+	position: relative;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.foto::after {
+	content: "";
+	display: block;
+	border: 1.25rem solid transparent;
+	border-left: 1.25rem solid #fff;
+	position: absolute;
+	right: -3.125rem;
+	top: calc(50% - 20px);
+}
+
+.foto img {
+	width: 100%;
+	vertical-align: top;
+}
+
+
+.evento:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
+.evento:nth-child(even) .fecha {
+	justify-content: end;
+}
+
+.evento:nth-child(even) .foto::after {
+	content: "";
+	border: 1.25rem solid transparent;
+	border-right: 1.25rem solid #fff;
+	right: initial;
+	left: -3.125rem;
+}
+
+
+/* ------ Media Queries --------- */
+
+
+@media (max-width: 380px) {
+	body {
+	  font-size: 7px;
+	}
+
+	.foto{
+		height: 100%;
+	}
+
+	.foto img {
+		width: 100%;
+	}
+
+	.hero h1{
+		font-size: 1em;
+		box-shadow: 0 0.4375rem 0 0.3125rem rgba(240, 167, 10, 0.4);
+	 }
+  }
+  
